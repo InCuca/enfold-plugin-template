@@ -2,7 +2,7 @@
 /**
  * Plugin Name:     Enfold hello
  * Plugin URI:      https://incuca.net
- * Description:     hello Enfold Plugin
+ * Description:     Hello Enfold Plugin
  * Author:          INCUCA
  * Author URI:      https://incuca.net
  * Text Domain:     ic-hello
