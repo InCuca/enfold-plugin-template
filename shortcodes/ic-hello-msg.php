@@ -8,9 +8,9 @@ if ( !class_exists( 'ic_hello_msg' ) ) {
 		{
 			// Configure shortcode
 			$this->config['name']		= 'Hello';
-			$this->config['icon']		= plugin_dir_url(__FILE__) . '../images/hello_msg.png';
+			$this->config['icon']		= plugin_dir_url(__FILE__) . '../images/ic-hello-msg.png';
 			$this->config['target']		= 'avia-target-insert';
-			$this->config['shortcode'] 	= 'ic_hello_msg';
+			$this->config['shortcode'] 	= 'ic-hello-msg';
 			$this->config['tooltip'] 	= 'Exibe uma mensagem de olá';
 			$this->config['preview'] 	= false;
 		}
@@ -53,6 +53,12 @@ if ( !class_exists( 'ic_hello_msg' ) ) {
 			$output = ob_get_contents();
 			ob_end_clean();
 			return $output;
+		}
+
+		function extra_assets()
+		{
+			$plugin_dir = plugin_dir_url(__FILE__);
+			wp_enqueue_style( 'ic-hello-msg' , $plugin_dir.'../css/ic-hello-msg.css' , array(), false );
 		}
 	}
 }
