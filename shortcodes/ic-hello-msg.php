@@ -8,7 +8,7 @@ if ( !class_exists( 'ic_hello_msg' ) ) {
 		{
 			// Configure shortcode
 			$this->config['name']		= 'Hello';
-			$this->config['icon']		= plugin_dir_url(__FILE__) . '../images/ic-hello-msg.png';
+			$this->config['icon']		= plugin_dir_url(__FILE__) . '../images/ic-template-icon.png';
 			$this->config['target']		= 'avia-target-insert';
 			$this->config['shortcode'] 	= 'ic-hello-msg';
 			$this->config['tooltip'] 	= 'Exibe uma mensagem de olá';
